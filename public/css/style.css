@@ -6,6 +6,19 @@ h1{
     color: darkblue;
     text-align: center;
 }
+
 #firstParagraph {
     color: darkred;
+}
+
+#secondParagraph {
+    color: purple;
+}
+
+.content {
+    margin-left: 20px;
+}
+
+.contentBox {
+    border: 1px solid black;
 }
