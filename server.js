@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const fs = require('fs');
+// const fs = require('fs');
 require('dotenv').config();
 
 const port = process.env.PORT || 8080;
@@ -28,8 +28,9 @@ app.use(express.static(__dirname + '/public'));
 // Serve app
 console.log('Listening on: http://localhost:' + port);
 
-app.get ("/", (req, res) => {
-    res.send("index");
+app.get ("/i", (req, res) => {
+    console.log("got page request");
+    res.sendfile("public/index.html");
 })
 
 app.listen(port);
