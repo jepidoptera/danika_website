@@ -1,10 +1,13 @@
 body {
     background-color: whitesmoke;
 }
-h1{
+h1 {
     font-size: 32pt;
     color: darkblue;
     text-align: center;
+}
+img {
+    display: inline-block;
 }
 
 #firstParagraph {
