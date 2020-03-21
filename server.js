@@ -28,8 +28,7 @@ app.use(express.static(__dirname + '/public'));
 // Serve app
 console.log('Listening on: http://localhost:' + port);
 
-app.get ("/i", (req, res) => {
-    console.log("got page request");
+app.get ("/", (req, res) => {
     res.sendfile("public/index.html");
 })
 
